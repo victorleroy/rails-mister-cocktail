@@ -6,7 +6,7 @@
       <% @cocktails.each do |cocktail| %>
         <p><%= cocktail.name %></p>
         <p><%= link_to 'View cocktail', cocktail_path(cocktail[:id]) %></p>
-        <p><%= link_to 'Add a recipe', new_cocktail_dose_path(cocktail) %></p>
+        <p><%= link_to 'Add ingredients', new_cocktail_dose_path(cocktail) %></p>
       <%= "_" * 50 %>
       <% end %>
     <br/>
