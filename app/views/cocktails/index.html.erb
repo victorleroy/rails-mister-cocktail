@@ -1,6 +1,16 @@
-<h1>Cocktails</h1>
-
-<h2><%= @cocktail %></h2>
-<% @cocktails.each do |cocktail| %>
+<div class="container padded">
+  <div class="row">
+    <div class="col-xl-12">
+      <h1>Cocktails</h1>
+      <%= "_" * 50 %>
+      <% @cocktails.each do |cocktail| %>
         <p><%= cocktail.name %></p>
-  <% end %>
+        <p><%= link_to 'View cocktail', cocktail_path(cocktail[:id]) %></p>
+        <p><%= link_to 'Add a recipe', new_cocktail_dose_path(cocktail) %></p>
+      <%= "_" * 50 %>
+      <% end %>
+    <br/>
+      <%= link_to 'New Cocktail', new_cocktail_path %>
+    </div>
+  </div>
+</div>
