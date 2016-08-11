@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.3.1'
 gem 'rspec-rails', group: [ :test ]
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
